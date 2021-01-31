@@ -1,6 +1,8 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library     ../robotframework/externallibrary/pythonfile.py
+Library    ../robotframework/externallibrary/autoitsample.py
+
 *** Variables ***
 ${url}      https://www.thetestingworld.com/
 ${browser}      chrome
@@ -38,3 +40,8 @@ find sumb of value
 print my name
     [Arguments]     ${name}
     myname  ${name}
+
+autoit_uplaod image
+    selectfile
+
+
