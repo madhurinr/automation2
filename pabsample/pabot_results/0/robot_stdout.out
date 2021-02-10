@@ -1,0 +1,11 @@
+==============================================================================
+Goto :: Suite description                                                     
+==============================================================================
+Test title                                                            | FAIL |
+Keyword 'SeleniumLibrary.Go To' expected 1 argument, got 2.
+------------------------------------------------------------------------------
+Goto :: Suite description                                             | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Mallikarjun\PycharmProjects\newproject\pabsample\pabot_results\0\output.xml
