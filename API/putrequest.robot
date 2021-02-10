@@ -14,9 +14,13 @@ put request
    log to console  ${request.status_code}
    log to console  ${request.json()}
    ${validation}=  Get Dictionary Items  ${request.json()}
+   ${type}=  Evaluate   type($validation)
+   log to console  ${validation}
    List Should Contain Value  ${validation}  true
    log to console  sucessfully found
    Dictionary Should Contain Value	${request.json()}  true
+   ${status}=  Get From Dictionary  ${request.json()}  msg
+   log to console  ${status}
 #
 #   log to console  ${data}
 #id":89669,"first_name":"madhuri","middle_name":"nn","last_name":"rr","date_of_birth":"08/09/1976"

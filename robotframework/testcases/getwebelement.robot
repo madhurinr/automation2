@@ -5,6 +5,7 @@ Resource    ../robotframework/resource/reskeyword.robot
 ${var1}=  Convert To Integer    2
 *** Test Cases ***
 print webelement
+    [Tags]  genric
     open udemy
     ${elemt}    Get WebElement      //input[@placeholder="Search for anything"]
     log to console      ${elemt}

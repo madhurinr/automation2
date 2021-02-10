@@ -34,7 +34,7 @@ z=re.search("ame",text)
 print(z)
 
 text2="madhuri.revanna@gmail.com"
-findtext=re.findall("\w..*@\w..*.\w",text2)
+findtext=re.findall("[\w._%+-]{1-20}@[\w.-]{2-20}.[A-Za-z0-9]{1-3}",text2)
 print(findtext)
 
 text3="madhuri.revanna@gmail.com"

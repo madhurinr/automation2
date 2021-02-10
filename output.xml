@@ -1,108 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20210131 18:16:43.069" rpa="false">
-<suite id="s1" name="Autoit" source="C:\Users\Mallikarjun\PycharmProjects\newproject\robotframework\testcases\autoit.robot">
-<test id="s1-t1" name="uploadimage">
-<kw name="open googleimage click on image icon">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
+<robot generator="Robot 3.2.2 (Python 3.7.4 on win32)" generated="20210211 00:44:43.012" rpa="false">
+<suite id="s1" name="Webauthi" source="C:\Users\Mallikarjun\PycharmProjects\newproject\webauthintication\webauthi.robot">
+<test id="s1-t1" name="handle web auth">
+<kw name="New Browser">
 <arguments>
-<arg>https://www.google.co.in/imghp?hl=en&amp;tab=ri&amp;authuser=0&amp;ogbl</arg>
-<arg>chrome</arg>
+<arg>chromium</arg>
 </arguments>
-<msg timestamp="20210131 18:16:43.902" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/imghp?hl=en&amp;tab=ri&amp;authuser=0&amp;ogbl'.</msg>
-<status status="PASS" starttime="20210131 18:16:43.901" endtime="20210131 18:16:48.926"></status>
+<msg timestamp="20210211 00:44:44.264" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<status status="FAIL" starttime="20210211 00:44:44.263" endtime="20210211 00:44:44.264"></status>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210131 18:16:48.927" endtime="20210131 18:16:50.071"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//input[@title="Search"]</arg>
-</arguments>
-<msg timestamp="20210131 18:16:50.073" level="INFO">Clicking element '//input[@title="Search"]'.</msg>
-<status status="PASS" starttime="20210131 18:16:50.072" endtime="20210131 18:16:50.330"></status>
-</kw>
-<kw name="Element Should Be Focused" library="SeleniumLibrary">
-<doc>Verifies that element identified by ``locator`` is focused.</doc>
-<arguments>
-<arg>//input[@title="Search"]</arg>
-</arguments>
-<status status="PASS" starttime="20210131 18:16:50.331" endtime="20210131 18:16:50.375"></status>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<arguments>
-<arg>//*[@aria-label="Search by image"]</arg>
-</arguments>
-<msg timestamp="20210131 18:16:50.471" level="INFO">Element '//*[@aria-label="Search by image"]' is displayed.</msg>
-<status status="PASS" starttime="20210131 18:16:50.376" endtime="20210131 18:16:50.471"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@aria-label="Search by image"]</arg>
-</arguments>
-<msg timestamp="20210131 18:16:50.472" level="INFO">Clicking element '//*[@aria-label="Search by image"]'.</msg>
-<status status="PASS" starttime="20210131 18:16:50.472" endtime="20210131 18:16:50.609"></status>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<arguments>
-<arg>//*[contains(text(),"Search by image")]</arg>
-</arguments>
-<status status="PASS" starttime="20210131 18:16:50.610" endtime="20210131 18:16:50.714"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[contains(text(),'Upload an image')]</arg>
-</arguments>
-<msg timestamp="20210131 18:16:50.715" level="INFO">Clicking element '//*[contains(text(),'Upload an image')]'.</msg>
-<status status="PASS" starttime="20210131 18:16:50.714" endtime="20210131 18:16:50.866"></status>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<arguments>
-<arg>//input[@type="file"]</arg>
-</arguments>
-<msg timestamp="20210131 18:16:50.966" level="INFO">Element '//input[@type="file"]' is displayed.</msg>
-<status status="PASS" starttime="20210131 18:16:50.866" endtime="20210131 18:16:50.966"></status>
-</kw>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<arguments>
-<arg>//input[@type="file"]</arg>
-</arguments>
-<msg timestamp="20210131 18:16:50.968" level="INFO">Simulating Mouse Over on element '//input[@type="file"]'.</msg>
-<status status="PASS" starttime="20210131 18:16:50.967" endtime="20210131 18:16:51.269"></status>
-</kw>
-<kw name="Press Keys" library="SeleniumLibrary">
-<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<arguments>
-<arg>//input[@type="file"]</arg>
-<arg>//13</arg>
-</arguments>
-<msg timestamp="20210131 18:16:51.271" level="INFO">Sending key(s) ('//13',) to //input[@type="file"] element.</msg>
-<msg timestamp="20210131 18:16:51.576" level="INFO">Sending keys //13</msg>
-<status status="PASS" starttime="20210131 18:16:51.270" endtime="20210131 18:16:51.612"></status>
-</kw>
-<kw name="autoit uploadfile">
-<kw name="autoit_uplaod image" library="reskeyword">
-<kw name="selectfile">
-<msg timestamp="20210131 18:16:51.631" level="FAIL">No keyword with name 'selectfile' found.</msg>
-<status status="FAIL" starttime="20210131 18:16:51.631" endtime="20210131 18:16:51.632"></status>
-</kw>
-<status status="FAIL" starttime="20210131 18:16:51.614" endtime="20210131 18:16:51.632"></status>
-</kw>
-<status status="FAIL" starttime="20210131 18:16:51.613" endtime="20210131 18:16:51.633"></status>
-</kw>
-<status status="FAIL" starttime="20210131 18:16:43.899" endtime="20210131 18:16:51.633"></status>
-</kw>
-<status status="FAIL" starttime="20210131 18:16:43.897" endtime="20210131 18:16:51.635" critical="yes">No keyword with name 'selectfile' found.</status>
+<status status="FAIL" starttime="20210211 00:44:44.247" endtime="20210211 00:44:44.265" critical="yes">No keyword with name 'New Browser' found.</status>
 </test>
-<status status="FAIL" starttime="20210131 18:16:43.075" endtime="20210131 18:16:51.640"></status>
+<status status="FAIL" starttime="20210211 00:44:43.019" endtime="20210211 00:44:44.270"></status>
 </suite>
 <statistics>
 <total>
@@ -112,28 +21,17 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Autoit">Autoit</stat>
+<stat pass="0" fail="1" id="s1" name="Webauthi">Webauthi</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210131 18:16:43.889" level="ERROR">Error in file 'c:\users\mallikarjun\pycharmprojects\newproject\robotframework\resource\reskeyword.robot' on line 4: Importing test library 'c:\users\mallikarjun\pycharmprojects\newproject\robotframework\externallibrary\autoitsample.py' failed: AutoItError: Window/Control could not be found
+<msg timestamp="20210211 00:44:44.241" level="ERROR">Error in file 'C:\Users\Mallikarjun\PycharmProjects\newproject\webauthintication\webauthi.robot' on line 3: Initializing test library 'Browser' with no arguments failed: Couldn't execute node. Please ensure you have node.js installed and in PATH. See https://nodejs.org/ for instructions. Original error is [WinError 2] The system cannot find the file specified
 Traceback (most recent call last):
-  File "c:\users\mallikarjun\pycharmprojects\newproject\robotframework\externallibrary\autoitsample.py", line 7, in &lt;module&gt;
-    selectfile()
-  File "c:\users\mallikarjun\pycharmprojects\newproject\robotframework\externallibrary\autoitsample.py", line 4, in selectfile
-    autoit.control_focus("Open","Edit1")
-  File "c:\users\mallikarjun\pycharmprojects\newproject\venv\lib\site-packages\autoit\autoit.py", line 84, in wrapper
-    raise AutoItError(err_msg)
-PYTHONPATH:
-  C:\Users\Mallikarjun\PycharmProjects\newproject\venv\Scripts\robot.exe
-  C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\python37.zip
-  C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\DLLs
-  C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64\lib
-  C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python37_64
-  c:\users\mallikarjun\pycharmprojects\newproject\venv
-  c:\users\mallikarjun\pycharmprojects\newproject\venv\lib\site-packages
-  c:\users\mallikarjun\pycharmprojects\newproject\venv\lib\site-packages\setuptools-40.8.0-py3.7.egg
-  c:\users\mallikarjun\pycharmprojects\newproject\venv\lib\site-packages\pip-19.0.3-py3.7.egg
-  c:\users\mallikarjun\pycharmprojects\newproject\venv\lib\site-packages\pyautoit-0.6.0-py3.7.egg</msg>
+  File "c:\users\mallikarjun\pycharmprojects\newproject\venv\lib\site-packages\Browser\browser.py", line 660, in __init__
+    self.playwright = Playwright(self, enable_playwright_debug)
+  File "c:\users\mallikarjun\pycharmprojects\newproject\venv\lib\site-packages\Browser\playwright.py", line 42, in __init__
+    self.ensure_node_dependencies()
+  File "c:\users\mallikarjun\pycharmprojects\newproject\venv\lib\site-packages\Browser\playwright.py", line 57, in ensure_node_dependencies
+    "Couldn't execute node. Please ensure you have node.js installed and in PATH. "</msg>
 </errors>
 </robot>

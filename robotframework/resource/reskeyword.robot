@@ -8,6 +8,7 @@ ${url}      https://www.thetestingworld.com/
 ${browser}      chrome
 
 
+
 *** Keywords ***
 openbrowser and max
     open browser    ${url}  ${browser}
@@ -42,6 +43,9 @@ print my name
     myname  ${name}
 
 autoit_uplaod image
-    selectfile
+    [Arguments]  ${url}
+    selectfile  ${url}
+
+
 
 

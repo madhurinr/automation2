@@ -6,3 +6,4 @@ cursor.execute('SELECT * FROM DimAccount')
 
 for row in cursor:
     print(row[0])
+cursor.close()

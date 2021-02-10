@@ -1,0 +1,10 @@
+1612449460008	geckodriver	INFO	Listening on 127.0.0.1:51630
+1612449463054	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\MALLIK~1\\AppData\\Local\\Temp\\rust_mozprofilejElNMO"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612449469864	Marionette	INFO	Listening on port 51638
+1612449470254	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612449470303	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1612449480157	Marionette	INFO	Stopped listening on port 51638

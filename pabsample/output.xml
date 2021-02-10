@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 3.1.2 (Python 3.8.1 on win32)" generated="20210204 17:54:14.782" rpa="false">
+<suite id="s1" name="Goto" source="C:\Users\Mallikarjun\PycharmProjects\newproject\robotframework\testcases\goto.robot">
+<test id="s1-t1" name="Test title">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.google.co.in/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210204 17:54:07.841" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.in/'.</msg>
+<status status="PASS" starttime="20210204 17:54:07.840" endtime="20210204 17:54:14.358"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://robotframework.org/</arg>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20210204 17:54:14.362" level="FAIL">Keyword 'SeleniumLibrary.Go To' expected 1 argument, got 2.</msg>
+<status status="FAIL" starttime="20210204 17:54:14.358" endtime="20210204 17:54:14.362"></status>
+</kw>
+<tags>
+<tag>genric</tag>
+</tags>
+<status status="FAIL" starttime="20210204 17:54:07.837" endtime="20210204 17:54:14.362" critical="yes">Keyword 'SeleniumLibrary.Go To' expected 1 argument, got 2.</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20210204 17:54:07.160" endtime="20210204 17:54:14.366"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">genric</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Goto">Goto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

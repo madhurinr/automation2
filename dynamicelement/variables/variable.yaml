@@ -1,0 +1,4 @@
+URL: 'https://www.timeanddate.com/worldclock/india/new-delhi'
+Browser: 'chrome'
+TIME: '//span[@id="ct"]'
+GMAIL_URL: 'https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox'

@@ -5,7 +5,7 @@ Library     SeleniumLibrary
 test multiple browser
     open browser    https://www.google.co.in/   chrome
     Maximize Browser Window
-    open browser    https://www.thetestingworld.com/    chrome      second
+    open browser    https://www.thetestingworld.com/    Firefox      second
     Maximize Browser Window
     switch browser  1
     ${url1}     get location

@@ -20,8 +20,21 @@ open googleimage click on image icon
     mouse over  //input[@type="file"]
    # Choose File  //input[@type="file"]  D://Madhuri/study doc/Screenshot_1.png
     Press Keys  //input[@type="file"]  //13
-    autoit uploadfile
-#
-##
+    sleep  5 seconds
+    autoit uploadfile   D:\\Madhuri\\study doc\\Screenshot_1.png
+    Set Selenium Implicit Wait  10 seconds
+    Wait Until Page Contains Element  //*[@type="text"]  10 seconds
+    Page Should Contain Element   //*[@id="sbtc"]//child::div[1]/a/div[2]
+    #click element  //*[@id="sbtc"]//child::div[1]/a/div[2]
+    click element  //*[@class="BwoPOe"]
+    click element   //*[contains(text(),'Upload an image')]
+    mouse over  //*[@id="awyMjb"]
+    press keys  //*[@id="awyMjb"]  //13
+    sleep  4 seconds
+    autoit uploadfile   D:\\Madhuri\\image\\ie.png
+
+
+
 autoit uploadfile
-    autoit_uplaod image
+    [Arguments]  ${url}
+    autoit_uplaod image  ${url}

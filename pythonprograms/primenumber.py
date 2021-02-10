@@ -11,4 +11,13 @@ if count==2:
         print("its prime number")
 else:
         print(("its not prime number"))
-
+print("--------------------------------------------------")
+prime=int(input())
+count=0
+for i in range (1,prime+1):
+    if (prime%i)==0:
+        count=count+1
+if count==2:
+    print("{} is prime number".format(prime))
+else:
+    print("{} is not prime number")

@@ -14,3 +14,16 @@ count1=11
 while count1>=0:
     print(count1)
     count1=count1-3
+
+string="madam"
+len=len(string)
+print("lengh"+str(len))
+reversename=""
+for i in range(len-1,-1,-1):
+    reversename=reversename+string[i]
+    if reversename==string:
+        print("its a palandrom")
+print(reversename)
+
+print(string[-1:-5])
+

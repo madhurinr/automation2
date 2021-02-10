@@ -1,12 +1,13 @@
 import requests
 import json
-import jsonpath
+#import jsonpath
 
 getreq=requests.get("http://thetestingworldapi.com//api/studentsDetails/555")
 print(getreq.json())
-firstname=jsonpath.jsonpath(getreq.json(),'data.first_name')
-print(firstname[0])
+#firstname=jsonpath.jsonpath(getreq.json(),'data.first_name')
+#print(firstname[0])
 print(getreq.json()['data']['id'])
+print("status val"+ getreq.json()['status'])
 val=json.loads(getreq.text)
 for i in val['data']:
     print(i)
